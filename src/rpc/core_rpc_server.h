@@ -181,7 +181,7 @@ namespace cryptonote
         MAP_JON_RPC_WE("rpc_access_submit_nonce",on_rpc_access_submit_nonce,    COMMAND_RPC_ACCESS_SUBMIT_NONCE)
         MAP_JON_RPC_WE("rpc_access_pay",         on_rpc_access_pay,             COMMAND_RPC_ACCESS_PAY)
         MAP_JON_RPC_WE_IF("rpc_access_tracking", on_rpc_access_tracking,        COMMAND_RPC_ACCESS_TRACKING, !m_restricted)
-        MAP_JON_RPC_WE_IF("rpc_access_data",     on_rpc_access_data,            COMMAND_RPC_ACCESS_DATA, !m_restricted)
+        MAP_JON_RPC_WE_IF("rpc_access_data",     on_rpc_access_data,            COMMAND_RPC_ACCESS_DATA)
         MAP_JON_RPC_WE_IF("rpc_access_account",  on_rpc_access_account,         COMMAND_RPC_ACCESS_ACCOUNT, !m_restricted)
       END_JSON_RPC_MAP()
     END_URI_MAP2()
