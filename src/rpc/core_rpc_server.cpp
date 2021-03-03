@@ -281,11 +281,11 @@ namespace cryptonote
     std::string address = command_line::get_arg(vm, arg_rpc_payment_address);
     if (!address.empty() && allow_rpc_payment)
     {
-      if (!m_restricted && nettype() != FAKECHAIN)
-      {
-        MFATAL("RPC payment enabled, but server is not restricted, anyone can adjust their balance to bypass payment");
-        return false;
-      }
+//      if (!m_restricted && nettype() != FAKECHAIN)
+//      {
+//        MFATAL("RPC payment enabled, but server is not restricted, anyone can adjust their balance to bypass payment");
+//        return false;
+//      }
       cryptonote::address_parse_info info;
       if (!get_account_address_from_str(info, nettype(), address))
       {
